@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 퀴즈 게임</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="intro_bg" id="home">
+            <div class="header">
+               <div class="logo">
+                  <a href="home.html"><img src="/image/logo.png"></a>
+              </div>
+
+
+            </div>
+        </div>
+
+        <div class="main_text0">
+            <div class="main_text1" id="quiz-selection">
+                <h1>QUIZ 선택</h1>
+                <div class="contents1">💡풀고 싶은 퀴즈를 선택하세요💡</div>
+
+                <div class="button-container">
+                  <a href="dog_quiz.html">
+                      <img src="/image/dog.png" alt="강아지 퀴즈" style="width: 220px; height: auto; margin-top: 50px;">
+                  </a>
+                  <a href="cat_quiz.html">
+                      <img src="/image/cat.png" alt="고양이 퀴즈" style="width: 200px; height: auto;">
+                  </a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function startDogQuiz() {
+            window.location.href = 'dog_quiz.html';
+        }
+
+        function startCatQuiz() {
+            window.location.href = 'cat_quiz.html';
+        }
+    </script>
+</body>
+</html>
