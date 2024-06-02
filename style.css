@@ -34,8 +34,8 @@
  
  .result {
    font-size: 24px;
-   text-align: center; /* 가운데 정렬 추가 */
-   margin-top: 20px; /* 상단 여백 추가 */
+   text-align: center;
+   margin-top: 20px;
  }
  
  .intro_bg {
@@ -215,29 +215,28 @@
    color: #fff;
  }
  
- /* 문제 간격 조정 및 가운데 정렬 */
+
  .question {
    margin-bottom: 15px;
    text-align: center;
  }
- 
- /* 버튼 스타일 변경 */
+
  button {
-   background-color: #FFD700; /* 노란 배경 */
-   color: #fff; /* 흰 글씨 */
-   border: none; /* 테두리 제거 */
-   padding: 10px 20px; /* 내부 여백 설정 */
-   cursor: pointer; /* 커서 모양 변경 */
+   background-color: #FFD700;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
    margin: 0 auto;
    display: flex;
  }
  
- /* 버튼 호버 효과 */
+
  button:hover {
-   opacity: 0.8; /* 호버 시 투명도 조절 */
+   opacity: 0.8;
  }
  
- /* 입력란 스타일 */
+
  .input-container {
    margin-top: 130px;
    margin-left: 130px;
@@ -245,7 +244,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 20px; /* 입력 필드 사이의 간격 조정 */
+   gap: 20px;
  }
  
  .input-container label {
@@ -254,42 +253,40 @@
  
  .input-container input {
    padding: 8px;
-   border: 1px solid #ccc; /* 입력 필드 테두리 스타일 */
+   border: 1px solid #ccc;
    border-radius: 4px; /* 입력 필드 테두리 모서리 둥글게 */
  }
  
  /* 입력 필드 호버 효과 */
  .input-container input:hover,
  .input-container input:focus {
-   border-color: #FFD700; /* 호버 및 포커스 시 테두리 색상 변경 */
+   border-color: #FFD700;
  }
  
  /* 버튼 스타일 */
  .button-container {
    text-align: center;
-   margin-top: 20px; /* 버튼 위 여백 설정 */
+   margin-top: 20px;
  }
  
  .button-container button {
-   background-color: #FFD700; /* 노란 배경 */
-   color: #fff; /* 흰 글씨 */
-   border: none; /* 테두리 제거 */
-   padding: 10px 20px; /* 내부 여백 설정 */
-   cursor: pointer; /* 커서 모양 변경 */
+   background-color: #FFD700;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
  }
  
- /* 버튼 호버 효과 */
  .button-container button:hover {
-   opacity: 0.8; /* 호버 시 투명도 조절 */
+   opacity: 0.8;
  }
  
- /* main_text0 */
  .main_text0 {
    width: 100%;
-   height: 601px;
+   height: 200vh;
    margin-top: -132px;
-   background: #f1f2f3;
- }
+/*    background: #f1f2f3;
+ */ }
  
  .main_text0 > h1 {
    padding-top: 116px;
@@ -302,9 +299,8 @@
  
  /* main_text1 */
  .main_text1 {
-   
    width: 100%;
-   height: 659px;
+   height: 190vh;
  }
  
  .main_text1 > h1 {
@@ -319,7 +315,7 @@
  }
  
  .correct {
-   background-color: #ccffcc; /* 연한 녹색 배경 */
+   background-color: #ccffcc;
    border: 2px solid green;
    border-radius: 50%;
    display: inline-block;
@@ -331,7 +327,7 @@
  }
  
  .incorrect {
-   background-color: #ffcccc; /* 연한 빨간색 배경 */
+   background-color: #ffcccc;
    border: 2px solid red;
    border-radius: 50%;
    display: inline-block;
@@ -352,7 +348,7 @@
    color: red;
    margin-bottom: 50px;
    margin-top: 150px;
-   text-align: center; /* 가운데 정렬 */
+   text-align: center;
  }
  
  .centered-text {

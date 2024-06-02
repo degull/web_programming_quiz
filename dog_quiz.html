@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,6 @@
                   <a href="home.html"><img src="/image/logo.png"></a>
               </div>
 
-                <!-- 사용자 정보 입력 폼 -->
                 <div class="input-container">
                     <label for="name">이름:</label>
                     <input type="text" id="name" name="name" required>
@@ -54,3 +53,70 @@
     <script src="dog_quiz.js"></script>
 </body>
 </html>
+ -->
+
+ 
+ <!DOCTYPE html>
+ <html lang="ko">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>강아지 퀴즈</title>
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+ <body>
+     <div class="wrap">
+         <div class="intro_bg" id="home">
+             <div class="header">
+                <div class="logo">
+                   <a href="home.html"><img src="/image/logo.png"></a>
+               </div>
+ 
+                 <!-- 사용자 정보 입력 폼 -->
+                 <div class="input-container">
+                     <label for="name">이름:</label>
+                     <input type="text" id="name" name="name" required>
+                     
+                     <label for="student-id">학번:</label>
+                     <input type="text" id="student-id" name="student-id" required>
+                     
+                     <label for="department">학과명:</label>
+                     <input type="text" id="department" name="department" required>
+                 </div>
+ 
+                 <ul class="nav">
+                     <li><a href="home.html#home">HOME</a></li>
+                     <li><a href="#quiz">QUIZ</a></li>
+                     <li><a href="#result">RESULT</a></li>
+                 </ul>
+             </div>
+         </div>
+ 
+         <div class="main_text0">
+             <div class="main_text1" id="quiz">
+                 <h1>QUIZ</h1>
+                 <div class="contents1">🐶퀴즈를 풀어보세요🐶</div>
+ 
+                 <div id="quiz-container" class="main_text1"></div>
+ 
+                 <button id="submit-button" onclick="submitQuiz()">제출하기</button>
+                 <div id="result-container">
+                     <div id="result"></div>
+                     <button id="restart-button" style="display: none;" onclick="restartQuiz()">다시 풀어보기</button>
+                 </div>
+             </div>
+ 
+             <!-- 결과 섹션 -->
+             <div class="main_text1" id="result">
+                 <h1>RESULT</h1>
+                 <div class="contents1">📊 퀴즈 결과 📊</div>
+                 <div id="result-list" class="main_text1"></div>
+             </div>
+         </div>
+     </div>
+ 
+     <script src="dog_quiz.js"></script>
+ </body>
+ </html>
+ 

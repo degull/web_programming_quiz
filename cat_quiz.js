@@ -123,7 +123,7 @@ function submitQuiz() {
            const correctAnswerText = document.createElement('div');
            correctAnswerText.textContent = `${questionIndex + 1}번 문제의 정답: ${questions[questionIndex].choices[correctAnswer]}`;
            correctAnswerText.classList.add('correct-answer');
-           label.parentElement.parentElement.appendChild(correctAnswerText); // 정답을 해당 질문 하단에 추가
+           label.parentElement.parentElement.appendChild(correctAnswerText);
        }
        label.insertBefore(icon, answer);
    });
