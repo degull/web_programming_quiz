@@ -53,6 +53,7 @@ const questions = [
 
 document.addEventListener('DOMContentLoaded', () => {
    startQuiz();
+   displayResults();
 });
 
 function startQuiz() {
@@ -131,8 +132,32 @@ function submitQuiz() {
    const resultDisplay = document.getElementById('result');
    resultDisplay.textContent = `${department} ${name}(${studentId})의 점수는 ${score}/5 입니다.`;
    resultDisplay.classList.add('centered-text');
+
+   saveResult({ name, studentId, department, score});
+
    document.getElementById('submit-button').style.display = 'none';
    document.getElementById('restart-button').style.display = 'block';
+
+   displayResults();
+
+}
+
+function saveResult(result){
+    const results = JSON.parse(localStorage.getItem('quizResults')) || [];
+    results.push(result);
+    localStorage.setItem('quizResults', JSON.stringify(results));
+}
+
+function displayResults(){
+    const results = JSON.parse(localStorage.getItem('quizResults')) || [];
+    const resultList = document.getElementById('result-list');
+    resultList.innerHTML = '';
+
+    results.forEach((result, index) => {
+        const resultItem = document.createElement('div');
+        resultItem.textContent = `${index + 1}. ${result.department} ${result.name}(${result.studentId}) - 점수: ${result.score}/5`
+        resultList.appendChild(resultItem);
+    });
 }
 
 function restartQuiz() {
